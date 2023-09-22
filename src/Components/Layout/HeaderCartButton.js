@@ -2,14 +2,14 @@ import React from "react";
 import "./HeaderCartButton.css";
 import CartIcon from "../Cart/CartIcon";
 
-export default function HeaderCartButton() {
+export default function HeaderCartButton(props) {
   return (
-    <button className="button">
+    <button className="button" onClick={props.onClick}>
       <span className="icon">
         <CartIcon />
       </span>
       <span> Your Cart</span>
-      <span className="bedge"> 3</span>
+      <span className="badge"> 3</span>
     </button>
   );
 }
